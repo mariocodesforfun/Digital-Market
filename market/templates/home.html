@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Jim Shaped Coding Market
+{% endblock %}
+{% block content %}
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark" style="color:white">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <img class="mb-4" src="https://i5.walmartimages.com/asr/47a61a19-e5b3-4b76-b3b0-5efdf411aa31.9e4586784670addccf7bc5da33b4a76f.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+            width="200"
+            height="150" />
+            <br>
+            <h1 class="display-4 font-weight-normal">Buy the Tech!</h1>
+            <p class="lead font-weight-normal">Start purchasing products by clicking the link below</p>
+            <a class="btn btn-primary" href="{{ url_for('market_page') }}">Start Buying!</a>
+        </div>
+        <div class="product-device box-shadow d-none d-md-block"></div>
+        <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    </div>
+{% endblock %}
